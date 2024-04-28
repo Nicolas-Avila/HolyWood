@@ -18,7 +18,7 @@ const mostrar = () => {
     descripciones.style.display = 'block'
 }
 
-//Capturo el evento click del botón agregar, y le paso la función para que muestre el formAbm
+//Capturo el evento click del botón agregar, y le paso la función para que muestre la descripción 
 btnMostrar.addEventListener('click', mostrar)
 btnOcultar.addEventListener('click', ocultar)
 
