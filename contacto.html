@@ -1,30 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="hojadeestilo.css" rel="stylesheet">
-        <title>Contacto</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="hojadeestilo.css" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="icon" href="img/log_wood_outdoors_nature_ecology_icon_141987.ico" type="image/x-icon">
+</head>
 
-    <body>
+<body>
 
-        <div class="bannerInicial">
-            <button class="boton"><a href="index.html">Inicio</a></button>
-            <button class="boton"><a href="acercaDe.html">Quienes somos?</a></button>
-            <button class="boton"><a href="contacto.html">Contacto</a></button>
-            <h1 class="titulo">Contacto/locales:</h1>
+    <header>
+        <button class="boton"><a href="index.html">Home</a></button>
+        <button class="boton"><a href="acercaDe.html">Acerca De</a></button>
+        <button class="boton"><a href="contacto.html">Contacto</a></button>
+        <h1 class="titulo">Contacto:</h1>
+    </header>
+    <br>
 
-        </div>
-        <br>
+    <div class='descripcion'>Bienvenido al formulario de consultas. Dejanos tu consulta para poder seguir mejorando</div>
+    <br>
 
-        <div class = 'descripciones2'> Para contactarnos, escribinos al mail madereraJuan@madera.com </div>
+    <div class="formulario">
+        <h2>Mandanos tu consulta:</h2>
+        <form action="enviar_consulta.php" method="POST">
+            <label for="nombre">Nombre ⬇</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="apellido">Apellido ⬇</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
 
-        
-        <footer class="bannerFinal">
-            <h3> Todos los derechos reservados 2024 ©</h3>
-        </footer>
-    </body>
+            <label for="email">Email ⬇</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje ⬇</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    
+    <footer>
+        <h3>Todos los derechos reservados 2024 ©</h3>
+    </footer>
+</body>
 
 </html>

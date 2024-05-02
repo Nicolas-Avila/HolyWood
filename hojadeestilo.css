@@ -1,52 +1,147 @@
-.bannerInicial {
-    border: 3px solid;
-    border-color: coral;
-    border-radius: 2px;
-    display: block;
-    background-color: burlywood;
-    width: auto;
-    height: auto;
-    text-align: center;
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
-.bannerFinal {
-    border: 3px solid;
-    border-color: coral;
-    border-radius: 2px;
-    display: block;
-    background-color: burlywood;
-    width: auto;
-    height: auto;
+header, footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
 }
 
 .titulo {
     font-weight: bold;
-    /* Texto en negrita */
     text-align: center;
-    /* Centrado del texto */
+    color: #fff;
 }
 
 .boton {
-    background-color: rgb(214, 121, 0);
-    width: auto;
-    height: auto;
-    color: rgb(255, 255, 255);
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #2980b9;
 }
 
 .imagen {
-    width: 500px;
-    height: 300px;
-    margin-left: 400px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.descripciones {
+.descripcion{
     text-align: center;
-    display: none;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.parrafo {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
 }
 
-.descripciones2 {
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.contenido > div {
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.encabezado{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #555;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario label {
     text-align: center;
     display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #7f8c8d;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.boton a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto;
 }
